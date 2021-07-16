@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 200;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  width: 5px;
+  height: 2px;
+  z-index: 2;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c0fab0;
+
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: #4d4d4d;
+
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

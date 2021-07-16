@@ -1,0 +1,34 @@
+@media screen and (max-width: 800px) {
+  .joinOuterContainer {
+    flex-direction: column;
+
+    .joinInnerContainer {
+      width: 100%;
+
+      #form-area {
+        width: 65%;
+
+        .heading {
+          margin-bottom: 0.5rem;
+        }
+
+        .join-phone {
+          display: block;
+          color: white;
+          opacity: 0.8;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  #header-main {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 540px) {
+  .heading {
+    display: none;
+  }
+}

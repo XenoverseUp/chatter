@@ -1,0 +1,101 @@
+.message-container {
+  margin: 0.5em 0;
+}
+
+.admin-user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+
+  .admin-box {
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: 0.4em 0.85em;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      text-transform: lowercase;
+      opacity: 0.9;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.current-user-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: left;
+
+  .current-box {
+    max-width: 60%;
+    margin-right: 1.5em;
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    box-shadow: 0 0 10px inset rgba(0, 0, 0, 0.521);
+    backdrop-filter: blur(20px);
+
+    p {
+      padding: 1em;
+      color: white;
+      font-size: 1.1rem;
+      letter-spacing: 0.05em;
+      font-weight: 400;
+      line-height: 1.2em;
+      text-transform: lowercase;
+
+      &::first-letter {
+        text-transform: uppercase;
+        padding-bottom: 0.1em;
+      }
+    }
+  }
+}
+
+.other-user-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+
+  .other-box {
+    max-width: 60%;
+    margin-left: 1.5em;
+    background-color: rgba(255, 255, 255, 0.267);
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    box-shadow: 0 0 10px inset rgba(255, 255, 255, 0.438);
+    padding: 0.8em 1em;
+    backdrop-filter: blur(20px);
+
+    .sent-by {
+      text-transform: lowercase;
+
+      &::first-letter {
+        text-transform: uppercase;
+        padding-bottom: 0.1em;
+      }
+    }
+
+    .sent-text {
+      color: black;
+      font-size: 1.1rem;
+      letter-spacing: 0.05em;
+      font-weight: 400;
+      line-height: 1.2em;
+      text-transform: lowercase;
+
+      &::first-letter {
+        text-transform: uppercase;
+        padding-bottom: 0.1em;
+      }
+    }
+  }
+}

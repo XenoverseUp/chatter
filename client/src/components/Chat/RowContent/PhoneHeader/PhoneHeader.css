@@ -1,0 +1,94 @@
+#main-phone-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.486);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  height: 3rem;
+  padding: 0.5em 1em;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.541);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.541);
+}
+
+#main-phone-header img {
+  width: 2rem;
+}
+
+#main-phone-header #phone-logo {
+  -webkit-animation: rotate-logo ease 10s infinite alternate;
+          animation: rotate-logo ease 10s infinite alternate;
+}
+
+#main-phone-header h1 {
+  font-weight: 300;
+  padding-top: 0.1em;
+  color: white;
+}
+
+#main-phone-header a {
+  border: 1px solid rgba(255, 0, 0, 0.678);
+  background-color: rgba(255, 0, 0, 0.397);
+  padding: 0.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.4rem;
+}
+
+#main-phone-header a img {
+  width: 1.5rem;
+  padding-right: 0.1em;
+}
+
+@-webkit-keyframes rotate-logo {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  33% {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+  66% {
+    -webkit-transform: rotate(240deg);
+            transform: rotate(240deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-logo {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  33% {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+  66% {
+    -webkit-transform: rotate(240deg);
+            transform: rotate(240deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=PhoneHeader.css.map */

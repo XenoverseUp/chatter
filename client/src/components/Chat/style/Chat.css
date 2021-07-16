@@ -1,0 +1,13 @@
+.chat-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: url("../../../img/bg-chat.jpg") no-repeat center/cover fixed;
+}
+/*# sourceMappingURL=Chat.css.map */

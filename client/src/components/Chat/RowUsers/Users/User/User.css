@@ -1,0 +1,22 @@
+.user-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+.user-container p {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  margin-left: 0.2em;
+}
+
+.user-container p::first-letter {
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=User.css.map */

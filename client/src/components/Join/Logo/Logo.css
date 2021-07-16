@@ -1,0 +1,112 @@
+#header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 2;
+}
+
+#header-logo #logo-out {
+  width: 3rem;
+  -webkit-animation: rotate-logo ease-in-out 20s infinite alternate;
+          animation: rotate-logo ease-in-out 20s infinite alternate;
+}
+
+#header-logo h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-left: 0.5em;
+}
+
+#header-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 5rem;
+  border-right: solid 1rem white;
+  padding-right: 2rem;
+}
+
+#header-main #header-name {
+  font-weight: 300;
+  text-align: right;
+  color: white;
+  font-size: 7rem;
+  margin-bottom: 2rem;
+}
+
+#header-main #header-description {
+  text-align: right;
+  color: white;
+  font-weight: 300;
+  opacity: 0.8;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  line-height: 1.4em;
+}
+
+.header-universal {
+  width: 60%;
+}
+
+@-webkit-keyframes rotate-logo {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  33% {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+  66% {
+    -webkit-transform: rotate(240deg);
+            transform: rotate(240deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-logo {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  33% {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+  66% {
+    -webkit-transform: rotate(240deg);
+            transform: rotate(240deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=Logo.css.map */

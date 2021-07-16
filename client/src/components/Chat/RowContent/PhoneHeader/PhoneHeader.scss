@@ -1,0 +1,55 @@
+#main-phone-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.486);
+  backdrop-filter: blur(20px);
+  height: 3rem;
+  padding: 0.5em 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.541);
+
+  img {
+    width: 2rem;
+  }
+
+  #phone-logo {
+    animation: rotate-logo ease 10s infinite alternate;
+  }
+
+  h1 {
+    font-weight: 300;
+    padding-top: 0.1em;
+    color: white;
+  }
+
+  a {
+    border: 1px solid rgba(255, 0, 0, 0.678);
+    background-color: rgba(255, 0, 0, 0.397);
+    padding: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
+
+    img {
+      width: 1.5rem;
+      padding-right: 0.1em;
+    }
+  }
+}
+
+@keyframes rotate-logo {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(120deg);
+  }
+  66% {
+    transform: rotate(240deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

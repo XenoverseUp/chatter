@@ -1,0 +1,120 @@
+@mixin hover-supported() {
+	@media not all and (pointer: coarse) {
+		&:hover {
+			@content;
+		}
+	}
+}
+
+.joinOuterContainer {
+	background: url("../../../img/bg.jpg") no-repeat center / cover fixed;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: center;
+	min-width: 100vw;
+	min-height: 100vh;
+
+	.joinInnerContainer {
+		width: 40%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, 0.199);
+		backdrop-filter: blur(20px);
+
+		#form-area {
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-direction: column;
+			width: 50%;
+
+			.heading {
+				font-size: 3rem;
+				color: white;
+				margin-bottom: 2rem;
+			}
+
+			.join-phone {
+				display: none;
+			}
+
+			div {
+				display: flex;
+				flex-direction: column;
+				color: white;
+				margin: 1rem 0;
+				position: relative;
+				width: 100%;
+				transition: ease 0.2s all;
+
+				input {
+					outline: none;
+					border: none;
+					background-color: transparent;
+					border: 1.5px solid white;
+					padding: 0.5em;
+					border-radius: 0.3rem;
+					caret-color: white;
+					color: white;
+					transition: ease 0.2s all;
+					font-family: "Yanone Kaffeesatz", sans-serif;
+					font-size: 1.2rem;
+					letter-spacing: 0.05em;
+
+					&:valid {
+						border: 1.5px solid rgb(1, 182, 1);
+						background-color: rgba(0, 122, 0, 0.11);
+					}
+					&:focus {
+						border: 1.5px solid #40c6d4;
+						background-color: rgba(0, 0, 0, 0.11);
+					}
+				}
+
+				label {
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					transition: ease 0.2s all;
+					display: flex;
+					align-items: center;
+					padding-left: 0.7rem;
+					z-index: -7;
+				}
+			}
+
+			.button {
+				outline: none;
+				border: none;
+				padding: 0.5em 0.7em;
+				font-family: "Yanone Kaffeesatz", sans-serif;
+				font-size: 1.1rem;
+				margin-top: 1rem;
+				border-radius: 0.3rem;
+				transition: ease 0.15s all;
+
+				@include hover-supported() {
+					background-color: rgb(83, 123, 233);
+					color: white;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+#form-area div input:focus + label {
+	transform: translateY(-1.9rem) scale(0.9) translateX(-1.5rem);
+}
+
+#form-area > div > input:valid + label {
+	transform: translateY(-1.9rem) scale(0.9) translateX(-1.5rem);
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "Messages.scss"
+    ],
+    "names": [],
+    "file": "Messages.css"
+}
